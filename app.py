@@ -14,5 +14,18 @@ def login():
 def join():
     return render_template('join.html')
 
+@app.route('/mypage')
+def mypage():
+    return render_template('mypage.html')
+
+@app.route('/memberModify')
+def memberModify():
+    return render_template('mypageModify.html')
+
+@app.route('/doolReg')
+def doolReg():
+    return render_template('mypageDoolReg.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
